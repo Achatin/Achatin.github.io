@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/tailwind.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Achatin</title>
+</head>
+<body class="overflow-hidden">
+
+  <div id="container" onscroll="dotScroll()" class="h-screen snap-mandatory overflow-auto">
+
+    <div class="h-screen bg-purple-600 snap-start">
+
+        <!-- Navbar -->
+          <nav class="flex items-center justify-between px-5 md:px-20 py-6">
+              <img src="Logo.png" class="h-14 md:h-16">
+              <a href="sk.html" class="text-lg md:text-xl font-semibold rounded-full px-6 py-2 bg-white shadow-2xl">EN | SK</a>
+          </nav>
+
+        <h1 class="md:hidden text-3xl font-extrabold text-center py-5">Hi, I'm an IT student.</h1>
+
+        <div class="flex justify-center md:justify-between px-auto md:px-16 lg:px-24 xl:pl-48">
+            <!-- Profile card -->
+            <div class="w-10/12 md:w-1/2 lg:w-2/5 xl:w-1/3 py-10 md:py-16 my-4 md:my-7 xl:my-16 rounded-xl bg-gray-100 shadow-2xl">
+                <img src="profile.png" class="w-32 rounded-full shadow-2xl m-auto">
+                <p class="pt-8 pb-2 font-extrabold text-xl lg:text-2xl text-center">Simon Nigut</p>
+                <p class="text-center text-gray-400 whitespace-nowrap">Coding Enthusiast</p>
+                <div class="w-48 h-0.5 mx-auto my-4 bg-gray-300 border-none"></div>
+                <div class="flex justify-center">                
+                    <img src="icons/school.svg" class="w-8 mr-3">
+                    <p class="text-md">Technical University of Košice</p>
+                </div>
+            </div>
+
+            <!-- Text -->
+            <div class="font-extrabold hidden text-5xl lg:text-6xl xl:text-7xl md:flex justify-end pt-10vh">Hi, I'm an<br> &nbsp;&nbsp;&nbsp; IT student.</div>
+        </div>
+
+        <!-- Notice -->
+        <div onscroll="dotScroll()" id="notice" class="text-center text-xl font-extrabold"> 
+          <p>Check out my skills below</p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
+
+    <div class="h-screen bg-purple-600 flex justify-between items-center snap-start md:px-7.5vw sm:px-0">
+
+        <!-- Image -->
+         <img src="icons/coding.svg" class="w-0 lg:w-32">
+
+        <!-- Text Box -->
+         <div class="px-8 md:px-16 py-8 md:py-14 xl:py-16 mx-7.5vw rounded-xl bg-gray-100 shadow-2xl">
+             <!-- Title -->
+             <h1 class="text-center md:text-left font-extrabold text-4xl md:text-5xl xl:text-6xl">Coding</h1>
+
+                <!-- Paragraph + skill levels -->
+                 <div class="md:flex py-5">
+                       <p class="text-sm md:text-lg xl:text-xl self-center text-justify">I am mostly a self-taught programmer. I've stuck to <b>C</b> for the past 5 months, so it's my language of choice. However, I've also used <b>C# paired with Unity3D</b> in past. Now I'm learning <b>React Native</b>. I am not an expert at any of the languages, but I feel confident about using them.</p>
+                       <div class="py-2 md:pl-10 lg:px-auto">
+                           <div class="font-bold text-lg md:text-xl text-center">Experience</div>
+                           <div class="flex justify-center py-1 md:py-2">
+
+                               <!-- Logo -->
+                                <img src="icons/C_logo.svg" class="w-6 mr-3">
+                               <!-- Expertise -->
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <!-- Inexperience -->
+                               <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+
+                            </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+
+                                <!-- Logo -->
+                                <img src="icons/lazarus.svg" class="w-6 mr-3">
+                                <!-- Expertise -->
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <!-- Inexperience -->
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+
+                            </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+
+                                <!-- Logo -->
+                                <img src="icons/c-sharp.svg" class="w-6 mr-3">
+                                <!-- Expertise -->
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <!-- Inexperience -->
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+
+                            </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+
+                                <!-- Logo -->
+                                <img src="icons/react_logo.svg" class="w-6 mr-3">
+                                <!-- Expertise -->
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <!-- Inexperience -->
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+
+
+                            </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+
+                                <!-- Logo -->
+                                <img src="icons/Python_logo.svg" class="w-6 mr-3">
+                                <!-- Expertise -->
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <!-- Inexperience -->
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+
+                            </div>
+                       </div>
+
+                        <!-- Slideshow -->
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48">
+                            <img id="slideCoding1" class="hidden Coding" src="slides/pokedex1.png">
+                            <img id="slideCoding2" class="hidden Coding" src="slides/pokedex2.png">
+                            <img id="slideCoding3" class="hidden Coding" src="icons/c-sharp.svg">
+                        </div>
+                   </div>
+
+             <!-- Preview & Github Link -->
+               <div class="flex justify-between md:justify-around">
+                   <div onmouseover="carouselCoding()" id="previewCoding" class="flex items-center justify-center w-20 h-12 font-bold rounded shadow-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 transition duration-300">Preview</div>
+                   <div class="flex">
+                        <img src="icons/Github_logo.svg" class="h-8 block my-auto ml-2 md:ml-32"> 
+                        <a href="https://github.com/Achatin/Coding" class="text-lg md:text-xl font-semibold flex ml-2 self-center text-indigo-600 hover:text-indigo-300">Github</a>
+                   </div>
+                </div>
+         </div>
+
+    </div>
+
+
+    <div class="h-screen bg-purple-600 flex justify-between items-center snap-start md:px-7.5vw sm:px-0">
+
+        <!-- Image -->
+         <img src="icons/webdev.svg" class="w-0 lg:w-32">
+
+        <!-- Text Box -->
+         <div class="px-8 md:px-16 py-8 md:py-14 xl:py-16 mx-7.5vw rounded-xl bg-gray-100 shadow-2xl">
+             <!-- Title -->
+             <h1 class="text-center md:text-left font-extrabold text-3xl md:text-5xl xl:text-6xl">Web Development</h1>
+
+                <!-- Paragraph + skill levels -->
+                 <div class="md:flex py-5">
+                       <p class="text-sm md:text-lg xl:text-xl self-center text-justify">I am pretty new to the web development, but I really like it. This website is my own project. It was built with <b>Tailwind CSS</b> framework. Apart from websites, I've been making a Discord Bot with <b>JavaScript</b> and <b>Discord API</b>.</p>
+
+                       <div class="py-2 md:pl-10 lg:px-auto">
+                           <div class="font-bold text-lg md:text-xl text-center">Experience</div>
+
+                                <div class="flex justify-center py-1 md:py-2">
+
+                                    <!-- Logo -->
+                                    <img src="icons/Tailwind_logo.svg" class="w-6 mr-3">
+                                    <!-- Expertise -->
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <!-- Inexperience -->
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    
+                                </div>
+
+                                <div class="flex justify-center py-1 md:py-2">
+
+                                    <!-- Logo -->
+                                    <img src="icons/html.svg" class="h-7 mr-3">
+                                    <!-- Expertise -->
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <!-- Inexperience -->
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    
+                                </div>
+
+                                <div class="flex justify-center py-1 md:py-2">
+
+                                    <!-- Logo -->
+                                    <img src="icons/CSS_logo.svg" class="w-6 mr-3">
+                                    <!-- Expertise -->
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <!-- Inexperience -->
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    
+                                </div>
+
+                                <div class="flex justify-center py-1 md:py-2">
+
+                                    <!-- Logo -->
+                                    <img src="icons/js-logo.svg" class="w-6 mr-3">
+                                    <!-- Expertise -->
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <!-- Inexperience -->
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                    
+                                </div>
+
+                        </div>
+
+                       <!-- Slideshow -->
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24">
+                           <img id="slideWD1" class="hidden WD" src="icons/js-logo.svg">
+                           <img id="slideWD2" class="hidden WD" src="icons/C_logo.svg">
+                           <img id="slideWD3" class="hidden WD" src="icons/c-sharp.svg">
+                        </div>
+                   </div>
+
+             <!-- Preview & Github Link -->
+               <div class="flex justify-between md:justify-around">
+                   <div onmouseover="carouselWD()" id="previewWD" class="flex items-center justify-center w-20 h-12 font-bold rounded shadow-lg bg-yellow-400 text-yellow-900 hover:bg-yellow-300 hover:text-yellow-800 transition duration-300">Preview</div>
+                   <div class="flex">
+                        <img src="icons/Github_logo.svg" class="h-8 w-8 block my-auto md:ml-32"> 
+                        <a href="https://www.youtube.com/watch?v=exb2ab72Xhs" class="text-lg md:text-xl font-semibold flex mx-2 self-center text-indigo-600 hover:text-indigo-300">Github</a>
+                   </div>
+                </div>
+
+         </div>
+
+    </div>
+
+
+    <div class="h-screen bg-purple-600 flex justify-between items-center snap-start md:px-7.5vw sm:px-0">
+
+         <!-- Image -->
+          <img src="icons/raspberry-pi.svg" class="w-0 lg:w-32">
+
+         <!-- Text Box -->
+          <div class="px-8 md:px-16 py-8 md:py-14 xl:py-16 mx-7.5vw rounded-xl bg-gray-100 shadow-2xl">
+              <!-- Title -->
+              <h1 class="text-center md:text-left font-extrabold text-4xl md:text-5xl xl:text-6xl">Raspberry Pi</h1>
+
+                 <!-- Paragraph + skill levels -->
+                  <div class="md:flex py-5">
+                        <p class="text-sm md:text-lg xl:text-xl self-center text-justify">I think of Raspberry Pi only as a hobby. I made a few projects with a small <b>Arduino display</b>. However, I still have a lot to learn.</p>
+
+                        <div class="py-2 md:pl-10 lg:px-auto">
+                            <div class="font-bold text-lg md:text-xl text-center">Experience</div>
+                            <div class="flex justify-center py-1 md:py-2">
+                                <img src="icons/raspberry-pi.svg" class="w-6 mr-3">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                            </div>
+                        </div>
+
+                        <!-- Slideshow -->
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24">
+                            <img id="slideRpi1" class="hidden Rpi" src="icons/js-logo.svg">
+                            <img id="slideRpi2" class="hidden Rpi" src="icons/C_logo.svg">
+                            <img id="slideRpi3" class="hidden Rpi" src="icons/c-sharp.svg">
+                          </div>
+                    </div>
+
+             <!-- Preview & Github Link -->
+             <div class="flex justify-between md:justify-around">
+                <div onmouseover="carouselWD()" id="previewWD" class="flex items-center justify-center w-20 h-12 font-bold rounded shadow-lg bg-yellow-400 text-yellow-900 hover:bg-yellow-300 hover:text-yellow-800 transition duration-300">Preview</div>
+                <div class="flex">
+                     <img src="icons/Github_logo.svg" class="h-8 w-8 block my-auto md:ml-32"> 
+                     <a href="https://www.youtube.com/watch?v=exb2ab72Xhs" class="text-lg md:text-xl font-semibold flex mx-2 self-center text-indigo-600 hover:text-indigo-300">Github</a>
+                </div>
+             </div>
+
+          </div>
+
+    </div>
+
+
+     <!-- OTHER SKILLS -->
+     <div class="h-screen bg-purple-600 flex justify-between items-center snap-start md:px-7.5vw sm:px-0">
+
+        <!-- Image -->
+         <img src="icons/skills.svg" class="w-0 lg:w-36 xl:w-44">
+
+        <!-- Text Box -->
+         <div class="px-8 md:px-16 pb-4 pt-8 md:py-14 xl:py-16 mx-7.5vw rounded-xl bg-gray-100 shadow-2xl">
+             <!-- Title -->
+             <h1 class="text-center md:text-left font-extrabold text-4xl md:text-5xl xl:text-6xl">Other Skills</h1>
+
+                <!-- Paragraph + skill levels -->
+                 <div class="md:flex py-5">
+                       <p class="text-sm md:text-lg xl:text-2xl self-center text-justify">I can operate <b>Linux OS</b>. I can <b>touch-type</b> (around 60 wpm). I have basic <b>graphical skills</b> with raster and vector graphics editors. I speak multiple languages - <b>English</b> (C1), <b>Russian</b> (B1), Slovak/Czech (native).</p>
+
+                       <div class="py-2 md:pl-10 lg:px-auto xl:px-16">
+                           <div class="font-bold text-lg md:text-xl text-center">Experience</div>
+
+                           <div class="flex justify-center py-1 md:py-2">
+                               <img src="icons/keyboard.svg" class="w-6 mr-3">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                               <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                           </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+                                <img src="icons/linux.svg" class="w-6 mr-3">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                            </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+                                <img src="icons/graphical_skills.svg" class="w-6 mr-3">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                            </div>
+
+                        <div class="font-bold text-lg md:text-xl text-center py-2">Languages</div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+                                <img src="icons/english.svg" class="w-6 mr-3">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                            </div>
+
+                            <div class="flex justify-center py-1 md:py-2">
+                                <img src="icons/russian.svg" class="w-6 mr-3">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/fullDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                                <img src="icons/emptyDot.svg" class="h-4 w-4 block my-auto mx-1.5 md:m-auto">
+                            </div>
+
+                       </div>
+
+                   </div>
+
+         </div>
+
+     </div>
+
+     <div class="h-screen bg-purple-600 flex justify-between items-center snap-start md:px-7.5vw sm:px-0">
+
+        <!-- Image -->
+         <img src="icons/info.svg" class="w-0 lg:w-32">
+
+        <!-- Text Box -->
+         <div class="px-5 md:px-16 pb-4 pt-8 md:py-14 xl:py-16 mx-7.5vw rounded-xl bg-gray-100 shadow-2xl">
+             <!-- Title -->
+             <h1 class="text-center md:text-left font-extrabold text-4xl md:text-5xl xl:text-6xl">Contact</h1>
+
+                <!-- Paragraph -->
+                <p class="text-sm md:text-lg xl:text-xl self-center text-justify">If you are interested in my work, or you have some questions, please, don't hesitate to contact me.</p>
+
+             <!-- Preview & Github Link -->
+               <div class="md:flex justify-between xl:px-16">
+                   <div class="flex py-3">
+                        <img src="icons/email.svg" class="w-8">
+                        <a href="mailto:simonnigut@gmail.com" class="xl:text-xl font-semibold flex mx-2 self-center text-indigo-600 hover:text-indigo-300">simonnigut@gmail.com</a>
+                   </div>
+                   <div class="flex py-3">
+                        <img src="icons/discord.svg" class="w-8">
+                        <a href="https://discordapp.com/users/261551359365611530" class="xl:text-xl font-semibold flex mx-2 self-center text-indigo-600 hover:text-indigo-300">Achatin#9114</a>
+                   </div>
+                </div>
+
+         </div>
+
+   </div>
+
+
+  </div>
+
+</body>
+</html>

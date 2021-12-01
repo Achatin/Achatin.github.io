@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  @responsive {
+    /* SCROLL SNAP */
+    /* align */
+    .snap-start {
+      scroll-snap-align: start;
+    }
+    /* type */
+    .snap-mandatory {
+      scroll-snap-type: y mandatory;
+    }
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+}
