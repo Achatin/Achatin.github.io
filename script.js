@@ -10,6 +10,14 @@ function dotScroll() {
 }
 
 
+function toContact() {
+
+    var elmntToView = document.getElementById("contact");
+    elmntToView.scrollIntoView({behavior: "smooth"}); 
+
+}
+
+
 function carouselRpi() {
     
     var myIndex = 0;

@@ -34,8 +34,8 @@ module.exports = {
         '5xl': '3rem',
         '6xl': '4rem',
         '7xl': '5rem',
-        '8vh': '8vh',
-        '15vh': '15vh',
+        '8xl': '7rem',
+        '9xl': '10rem',
     }
 
   },
