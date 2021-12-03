@@ -62,7 +62,7 @@ function carouselWD() {
     function startSlide(){
 
         var i;
-        var x = document.getElementsByClassName("hidden WD");
+        var x = document.getElementsByClassName("hidden rounded-xl shadow-xl WD");
 
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
