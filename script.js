@@ -98,7 +98,7 @@ function carouselCoding() {
     function startSlide(){
 
         var i;
-        var x = document.getElementsByClassName("hidden Coding");
+        var x = document.getElementsByClassName("hidden rounded-xl shadow-xl Coding");
 
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";  
@@ -118,6 +118,8 @@ function stopSlide(){
         document.getElementById("slideCoding1").style.display = "none";
         document.getElementById("slideCoding2").style.display = "none";
         document.getElementById("slideCoding3").style.display = "none";
+        document.getElementById("slideCoding4").style.display = "none";
+        document.getElementById("slideCoding5").style.display = "none";
 
     }
 
