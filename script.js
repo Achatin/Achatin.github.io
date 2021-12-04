@@ -120,6 +120,8 @@ function stopSlide(){
         document.getElementById("slideCoding3").style.display = "none";
         document.getElementById("slideCoding4").style.display = "none";
         document.getElementById("slideCoding5").style.display = "none";
+        document.getElementById("slideCoding6").style.display = "none";
+        document.getElementById("slideCoding7").style.display = "none";
 
     }
 
