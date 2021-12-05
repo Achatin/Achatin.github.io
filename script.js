@@ -82,6 +82,7 @@ function stopSlide(){
         document.getElementById("slideWD1").style.display = "none";
         document.getElementById("slideWD2").style.display = "none";
         document.getElementById("slideWD3").style.display = "none";
+        document.getElementById("slideWD4").style.display = "none";
 
     }
 
