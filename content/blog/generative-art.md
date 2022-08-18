@@ -49,7 +49,7 @@ I call them Unfamiliar [Blocks]. These are basically isometric cubes made of sim
 
 ---
 
-**TL;DR:** You should definitely give Generative Art a try. It's satisfying and surprisingly simple. Choose any language you like as long as it has some sort of image processing capabilities. But GO 🐹 definitely does a great job as well.
+**TL;DR:** Generative art is computer generated artistic content. You should definitely give Generative Art a try. It's satisfying and surprisingly simple. Choose any language you like as long as it has some sort of image processing capabilities. But GO 🐹 definitely does a great job as well.
 
 **Be creative and enjoy ❤**
 

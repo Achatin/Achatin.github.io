@@ -10,7 +10,7 @@ title = "Achatin"
   author = "Achatin"
   authorEmail = "simonnigut@gmail.com"
   authorImage = "/photo.png"
-  autoDarkMode = false
+  autoDarkMode = true
 
   copyright = "Copyright © 2022 - Achatin · All rights reserved"
   favicon = "favicon.ico"
