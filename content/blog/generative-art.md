@@ -40,7 +40,8 @@ func main() {
 
 ---
 
-Then I started to play with it this 🔽🔽🔽
+Then I started to play with it.
+And thi is what I ended up with 🔽🔽🔽
 
 ![Placeholder](/generative-banner.png)
 

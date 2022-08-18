@@ -1,5 +1,5 @@
 ---
-author: John Doe
+author: Achatin
 title: About Me
 date: 2022-08-17
 description:
