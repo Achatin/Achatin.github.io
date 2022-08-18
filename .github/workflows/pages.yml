@@ -44,7 +44,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v1
       - name: Build with Hugo
-        run: npm i && npm install -g postcss-cli && hugo -D --gc
+        run: npm i && npm install -g postcss-cli && hugo -D --gc 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
