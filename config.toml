@@ -1,0 +1,63 @@
+theme = "showfolio"
+languageCode = "en-us"
+baseurl = "https://achatin.github.io/"
+title = "Achatin"
+
+
+[params]
+  name = "Achatin's Portfolio"
+  description = "Modern portfolio theme for your Hugo site."
+  author = "Achatin"
+  authorEmail = "simonnigut@gmail.com"
+  authorImage = "/photo.png"
+  autoDarkMode = false
+
+  copyright = "Copyright © 2022 - Achatin · All rights reserved"
+  favicon = "favicon.ico"
+
+[params.homepage]
+  title = "Hey 👋 I'm Achatin"
+  tagline = "Coding Enthusiast"
+  description = "Computer science student and keen web Developer."
+  contact = "https://discord.com/users/261551359365611530"
+
+[[params.homepage.github]]
+  img = "https://cdn.discordapp.com/attachments/920679319704059954/1009557455467970580/item_98.png"
+  repo = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+
+[[params.homepage.github]]
+  img = "https://cdn.discordapp.com/attachments/920679319704059954/1009718727299829760/Screenshot_20220818-062221.png"
+  repo = "https://github.com/Achatin/Coding/tree/master/Flutter/Trivia/trivia"
+
+[[params.homepage.github]]
+  img = "https://raw.githubusercontent.com/Achatin/Coding/master/GO/Minecraft%20Generation/mc.png"
+  repo = "https://github.com/Achatin/Coding/tree/master/GO/Minecraft%20Generation"
+
+[[params.homepage.github]]
+  img = "https://raw.githubusercontent.com/Achatin/Web-Development/main/Glowing%20Button/glowing.png"
+  repo = "https://github.com/Achatin/Web-Development/tree/main/Glowing%20Button"
+
+[params.homepage.resume]
+  skills = ["🌐 Web Development", "📱 App Development", "👨‍💻 C | GO | JS | Java"]
+
+[[params.homepage.resume.work]]
+  name = "Programko"
+  role = "Programming Lector"
+  duration = "Aug 2022 - Present"
+
+[[params.homepage.resume.courses]]
+name = "Learn Go Programming by Building 11 Projects"
+provider = "freeCodeCamp"
+
+[params.homepage.social]
+  twitter = "https://twitter.com/_Achatin"
+  linkedin = "https://www.linkedin.com/in/%C5%A1imon-nigut-580134237/"
+  github = "https://github.com/Achatin"
+
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
