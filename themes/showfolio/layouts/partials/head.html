@@ -4,6 +4,25 @@
   <title>
     {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}
   </title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <!-- Meta -->
   {{- if .Description }}
   <meta name="description" content="{{ .Description }}" />
   {{ end -}}
@@ -15,26 +34,4 @@
   {{ end -}}
   {{ hugo.Generator }}
 
-  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-  {{- if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-  {{ else }}
-  {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
-  <link
-    rel="stylesheet"
-    href="{{ $styles.Permalink }}"
-    integrity="{{ $styles.Data.Integrity }}"
-  />
-  {{ end -}}
-
-  {{ if .Site.Params.autoDarkMode }}
-  <script>
-    // On page load or when changing themes
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  </script>
-  {{ end }}
 </head>

@@ -18,7 +18,7 @@ title = "Achatin"
 [params.homepage]
   title = "Hey 👋 I'm Achatin"
   tagline = "Coding Enthusiast"
-  description = "Computer science student and keen web Developer."
+  description = "Computer science student and keen Web Developer."
   contact = "https://discord.com/users/261551359365611530"
 
 [[params.homepage.github]]
