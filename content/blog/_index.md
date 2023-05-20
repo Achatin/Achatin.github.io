@@ -1,4 +1,0 @@
----
-author: Achatin
-title: Blog
----
