@@ -15,7 +15,7 @@
   </head>
   <body class="text-slate-800">
     <!-- Title Screen -->
-    <div class="mx-auto min-h-screen max-w-screen-xl">
+    <div class="m-5 min-h-screen max-w-screen-xl md:mx-auto">
       <header class="mt-10 flex items-center justify-between">
         <a href="#" class="flex items-center">
           <h2 class="mr-2 text-4xl">@</h2>
@@ -24,7 +24,7 @@
           </h3>
         </a>
 
-        <group class="flex items-center gap-x-20 text-xl">
+        <group class="hidden items-center gap-x-20 text-xl md:flex">
           <a href="#experience" class="hover:text-purple-600">Experience</a>
           <a href="#portfolio" class="hover:text-purple-600">Portfolio</a>
           <a href="#contact" class="hover:text-purple-600">Contact</a>
@@ -38,21 +38,23 @@
         </a>
       </header>
 
-      <hero class="mt-20 flex items-center justify-between">
+      <hero
+        class="mt-16 flex flex-col-reverse items-center justify-between md:mt-20 md:flex-row"
+      >
         <div>
-          <h1 class="text-7xl font-bold leading-snug">
+          <h1 class="text-4xl font-bold leading-snug md:text-7xl">
             Hi,<br />I'm <span class="text-purple-600">Simon</span><br />Web
             Developer
           </h1>
 
-          <div class="my-12 flex items-center">
+          <div class="my-12 flex flex-col items-center md:flex-row">
             <button
-              class="rounded-lg bg-purple-600 px-6 py-4 text-xl text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl"
+              class="mb-10 rounded-lg bg-purple-600 px-6 py-4 text-xl text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:mb-0"
             >
               Resumé
               <i class="fa-regular fa-paper-plane fa-lg ml-2"></i>
             </button>
-            <div class="ml-24 flex gap-x-6">
+            <div class="flex gap-x-6 md:ml-24">
               <a href="https://github.com/Achatin">
                 <icon-bubble size="14" icon="fa-brands fa-github"></icon-bubble
               ></a>
@@ -76,11 +78,11 @@
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 500"
-          width="50%"
           id="blobSvg"
           style="opacity: 1"
           filter="blur(0px)"
           transform="rotate(0)"
+          class="w-2/3 md:w-1/2"
         >
           <image
             x="0"
@@ -113,18 +115,21 @@
 
     <!-- Experience -->
     <div id="experience" class="bg-gray-100">
-      <div class="mx-auto min-h-screen max-w-screen-xl">
-        <div class="flex min-h-fit justify-between pt-20">
+      <div class="m-5 min-h-screen max-w-screen-xl md:mx-auto">
+        <div class="flex min-h-fit flex-col justify-between pt-20 md:flex-row">
           <div class="w-full">
-            <h2 class="relative mb-10 text-7xl font-bold leading-snug">
-              Skills & <br />Experience
+            <h2
+              class="relative mx-auto mb-10 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
+            >
+              Skills &<br />Experience
               <p
-                class="absolute -left-10 -top-2 -rotate-12 text-xl text-purple-600"
+                class="absolute -left-10 -top-5 -rotate-12 text-lg text-purple-600 md:text-xl"
               >
-                About me
+                About Me
               </p>
             </h2>
-            <p class="max-w-xl text-gray-500">
+
+            <p class="max-w-xl text-justify text-gray-500 md:text-left">
               I am a student of computer science & informatics at Technical
               University in Košice. Right after I learned my first programming
               language, I felt a need to use it for something creative. That't
@@ -134,11 +139,12 @@
           </div>
 
           <div class="w-full max-w-xl">
-            <h3 class="pt-20 text-5xl font-bold">Experience</h3>
+            <h3 class="pt-20 text-4xl font-bold md:text-5xl">Experience</h3>
 
             <div
-              class="my-10 w-full rounded-full border-2 border-slate-800"
+              class="my-10 w-full rounded-full border border-slate-800 md:border-2"
             ></div>
+
             <div class="grid grid-cols-3 grid-rows-2">
               <p class="text-lg font-bold">2023 - Present</p>
               <p class="col-span-2 mb-3 text-2xl font-bold">
@@ -149,8 +155,9 @@
             </div>
 
             <div
-              class="mb-10 mt-3 w-full rounded-full border-2 border-slate-800"
+              class="mb-10 mt-3 w-full rounded-full border border-slate-800 md:border-2"
             ></div>
+
             <div class="grid grid-cols-3 grid-rows-2">
               <p class="text-lg font-bold">2022 - 2023</p>
               <p class="col-span-2 mb-3 text-2xl font-bold">
@@ -162,9 +169,11 @@
           </div>
         </div>
 
-        <h3 class="pb-14 pt-8 text-5xl font-bold">Skills</h3>
+        <h3 class="pb-10 pt-8 text-4xl font-bold md:pb-14 md:text-5xl">
+          Skills
+        </h3>
 
-        <div class="grid grid-cols-3 grid-rows-2 gap-6 gap-y-10">
+        <div class="grid gap-6 gap-y-10 pb-20 md:grid-cols-3 md:grid-rows-2">
           <text-icon-bubble
             title="HTML, CSS, JS"
             text="Web development starter-kit."
@@ -205,15 +214,24 @@
     </div>
 
     <!-- Projects -->
-    <div id="portfolio" class="mx-auto my-20 max-h-screen max-w-screen-xl">
-      <h2 class="relative mb-10 text-7xl font-bold leading-snug">
+    <div
+      id="portfolio"
+      class="m-5 my-20 max-h-screen max-w-screen-xl md:mx-auto"
+    >
+      <h2
+        class="relative mx-auto mb-10 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
+      >
         Latest Projects
-        <p class="absolute -left-10 -top-2 -rotate-12 text-xl text-purple-600">
+        <p
+          class="absolute -left-10 -top-5 -rotate-12 text-lg text-purple-600 md:text-xl"
+        >
           Portfolio
         </p>
       </h2>
 
-      <section class="flex h-64 items-center justify-around">
+      <section
+        class="flex h-64 flex-col items-center justify-around md:flex-row"
+      >
         <image-showcase></image-showcase>
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
@@ -224,7 +242,9 @@
         </div>
       </section>
 
-      <section class="flex h-64 items-center justify-around">
+      <section
+        class="flex h-64 flex-col-reverse items-center justify-around md:flex-row"
+      >
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
           <p class="text-gray-500">
@@ -235,7 +255,9 @@
         <image-showcase></image-showcase>
       </section>
 
-      <section class="flex h-64 items-center justify-around">
+      <section
+        class="flex h-64 flex-col items-center justify-around md:flex-row"
+      >
         <image-showcase></image-showcase>
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
@@ -249,17 +271,19 @@
 
     <!-- Contact -->
     <div id="contact" class="bg-gray-100 py-20">
-      <div class="relative mx-auto max-w-screen-xl">
-        <h2 class="relative mb-16 text-7xl font-bold leading-snug">
+      <div class="relative m-5 max-w-screen-xl md:mx-auto">
+        <h2
+          class="relative mx-auto mb-16 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
+        >
           Consider hiring?<br />Let's Chat
           <p
-            class="absolute -left-10 -top-2 -rotate-12 text-xl text-purple-600"
+            class="absolute -left-10 -top-5 -rotate-12 text-lg text-purple-600 md:text-xl"
           >
             Contact
           </p>
         </h2>
 
-        <div class="flex items-center justify-between">
+        <div class="grid gap-6 md:grid-cols-3">
           <div class="flex items-center gap-6">
             <icon-bubble size="16" icon="fa-solid fa-envelope"></icon-bubble>
             <div>
@@ -293,10 +317,14 @@
       </div>
     </div>
 
-    <footer class="w-full bg-slate-800 py-8 font-bold text-white">
-      <div class="mx-auto flex max-w-screen-xl items-center justify-between">
-        <p>Copyright © 2023 - Simon Nigut · All rights reserved</p>
-        <div class="flex items-center gap-x-4">
+    <footer class="w-full bg-slate-800 py-6 font-bold text-white md:py-8">
+      <div
+        class="mx-5 flex max-w-screen-xl items-center justify-between md:mx-auto"
+      >
+        <p class="text-center text-sm md:text-left md:text-base">
+          Copyright © 2023 - Simon Nigut · All rights reserved
+        </p>
+        <div class="hidden items-center gap-x-4 md:flex">
           <a href="">
             <i
               class="fa-brands fa-square-twitter fa-xl text-white hover:text-purple-500"
