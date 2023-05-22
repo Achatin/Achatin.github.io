@@ -216,7 +216,7 @@
     <!-- Projects -->
     <div
       id="portfolio"
-      class="m-5 my-20 max-h-screen max-w-screen-xl md:mx-auto"
+      class="m-5 my-20 min-h-screen max-w-screen-xl md:mx-auto"
     >
       <h2
         class="relative mx-auto mb-10 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
@@ -230,9 +230,11 @@
       </h2>
 
       <section
-        class="flex h-64 flex-col items-center justify-around md:flex-row"
+        class="mb-20 flex h-full flex-col items-center justify-around md:mt-32 md:flex-row"
       >
-        <image-showcase></image-showcase>
+        <image-showcase
+          class="mb-10 scale-75 md:mb-0 md:scale-100"
+        ></image-showcase>
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
           <p class="text-gray-500">
@@ -243,7 +245,7 @@
       </section>
 
       <section
-        class="flex h-64 flex-col-reverse items-center justify-around md:flex-row"
+        class="mb-20 flex h-full flex-col-reverse items-center justify-around md:flex-row"
       >
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
@@ -252,13 +254,17 @@
             through snacks, add them to the cart & checkout.
           </p>
         </div>
-        <image-showcase></image-showcase>
+        <image-showcase
+          class="mb-10 scale-75 md:mb-0 md:scale-100"
+        ></image-showcase>
       </section>
 
       <section
-        class="flex h-64 flex-col items-center justify-around md:flex-row"
+        class="mb-20 flex h-full flex-col items-center justify-around md:flex-row"
       >
-        <image-showcase></image-showcase>
+        <image-showcase
+          class="mb-10 scale-75 md:mb-0 md:scale-100"
+        ></image-showcase>
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
           <p class="text-gray-500">
@@ -270,7 +276,7 @@
     </div>
 
     <!-- Contact -->
-    <div id="contact" class="bg-gray-100 py-20">
+    <div id="contact" class="bg-gray-100 py-12 md:py-20">
       <div class="relative m-5 max-w-screen-xl md:mx-auto">
         <h2
           class="relative mx-auto mb-16 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
@@ -283,7 +289,7 @@
           </p>
         </h2>
 
-        <div class="grid gap-6 md:grid-cols-3">
+        <div class="grid scale-90 gap-6 md:scale-100 md:grid-cols-3">
           <div class="flex items-center gap-6">
             <icon-bubble size="16" icon="fa-solid fa-envelope"></icon-bubble>
             <div>
