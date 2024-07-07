@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>📃 Simon Nigut | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/29b25fbda6.js"
@@ -32,7 +32,7 @@
 
         <a
           href="#contact"
-          class="rounded-md bg-purple-600 px-4 py-2 text-lg text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl"
+          class="rounded-md bg-purple-600 px-4 py-2 text-lg font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl"
         >
           Let's Talk
         </a>
@@ -49,22 +49,37 @@
 
           <div class="my-12 flex flex-col items-center md:flex-row">
             <button
-              class="mb-10 rounded-lg bg-purple-600 px-6 py-4 text-xl text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:mb-0"
+              class="mb-10 rounded-lg bg-purple-600 px-6 py-4 text-xl font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:mb-0"
             >
               Resumé
               <i class="fa-regular fa-paper-plane fa-lg ml-2"></i>
             </button>
             <div class="flex gap-x-6 md:ml-24">
-              <a href="https://github.com/Achatin">
+              <a
+                href="https://github.com/Achatin"
+                title="GitHub"
+                target="_blank"
+                rel="noopener"
+              >
                 <icon-bubble size="14" icon="fa-brands fa-github"></icon-bubble
               ></a>
-              <a href="">
+              <a
+                href="https://dribbble.com/Achatin"
+                title="Dribbble"
+                target="_blank"
+                rel="noopener"
+              >
                 <icon-bubble
                   size="14"
-                  icon="fa-brands fa-twitter"
+                  icon="fa-brands fa-dribbble"
                 ></icon-bubble>
               </a>
-              <a href="https://www.linkedin.com/in/%C5%A1imon-nigut-580134237">
+              <a
+                href="https://www.linkedin.com/in/simon-nigut/"
+                title="LinkedIn"
+                target="_blank"
+                rel="noopener"
+              >
                 <icon-bubble
                   size="14"
                   icon="fa-brands fa-linkedin-in"
@@ -130,11 +145,15 @@
             </h2>
 
             <p class="max-w-xl text-justify text-gray-500 md:text-left">
-              I am a student of computer science & informatics at Technical
-              University in Košice. Right after I learned my first programming
-              language, I felt a need to use it for something creative. That't
-              when I discovered my passion for digital design and web
-              development.
+              I have a <strong>Bachelor</strong> in Computer Science. Currently,
+              I am working on my <strong>Master's degree</strong> in
+              <strong>Software Engineering</strong> at University of Southern
+              Denmark, SDU.
+              <br />
+              <br />
+              Right after I learned my first programming language, I felt a need
+              to use it for something creative. That't when I discovered my
+              <strong>passion for digital design and web development</strong>.
             </p>
           </div>
 
@@ -146,7 +165,7 @@
             ></div>
 
             <div class="grid grid-cols-3 grid-rows-2">
-              <p class="text-lg font-bold">2023 - Present</p>
+              <p class="text-lg font-bold">Jun 2023 - Jul 2024</p>
               <p class="col-span-2 mb-3 text-2xl font-bold">
                 Front-end Developer
               </p>
@@ -159,7 +178,7 @@
             ></div>
 
             <div class="grid grid-cols-3 grid-rows-2">
-              <p class="text-lg font-bold">2022 - 2023</p>
+              <p class="text-lg font-bold">Sep 2022 - May 2023</p>
               <p class="col-span-2 mb-3 text-2xl font-bold">
                 Programming Lector
               </p>
@@ -187,26 +206,20 @@
           ></text-icon-bubble>
 
           <text-icon-bubble
-            title="Angular"
+            title="React"
             text="Favorite for side-projects."
-            icon="fa-brands fa-angular"
+            icon="fa-brands fa-react"
           ></text-icon-bubble>
 
           <text-icon-bubble
-            title="Laravel & PHP"
-            text="True PHP artisan."
-            icon="fa-brands fa-laravel"
-          ></text-icon-bubble>
-
-          <text-icon-bubble
-            title="Flutter"
-            text="Mobile application development."
-            icon="fa-brands fa-android"
+            title="PHP & Drupal"
+            text="Development of ARIS Community @SoftwareAG."
+            icon="fa-brands fa-php"
           ></text-icon-bubble>
 
           <text-icon-bubble
             title="SQL Databases"
-            text="Ready for back-end too."
+            text="PostgreSQL, MySQL, SQLite, etc."
             icon="fa-solid fa-database"
           ></text-icon-bubble>
         </div>
@@ -232,9 +245,22 @@
       <section
         class="mb-20 flex h-full flex-col items-center justify-around md:mt-32 md:flex-row"
       >
-        <image-showcase
-          class="mb-10 scale-75 md:mb-0 md:scale-100"
-        ></image-showcase>
+        <image-showcase class="relative mb-10 scale-75 md:mb-0 md:scale-100">
+          <img
+            src="images/curved-arrow.svg"
+            class="size-24 absolute -right-32 top-10 rotate-[120deg]"
+          />
+          <p
+            class="absolute -right-40 top-6 rotate-12 font-semibold text-purple-600 md:hidden"
+          >
+            tap me
+          </p>
+          <p
+            class="absolute -right-40 top-6 hidden rotate-12 font-semibold text-purple-600 md:block"
+          >
+            hover me
+          </p>
+        </image-showcase>
         <div class="max-w-lg text-center">
           <h3 class="mb-4 text-2xl font-bold">Full-Stack E-commerce Website</h3>
           <p class="mb-8 text-gray-500">
@@ -363,7 +389,8 @@
           </div>
 
           <a
-            href="https://www.linkedin.com/in/%C5%A1imon-nigut-580134237"
+            href="https://www.linkedin.com/in/simon-nigut/"
+            title="LinkedIn"
             class="flex items-center gap-6"
           >
             <icon-bubble
@@ -384,20 +411,35 @@
         class="mx-5 flex max-w-screen-xl items-center justify-between md:mx-auto"
       >
         <p class="text-center text-sm md:text-left md:text-base">
-          Copyright © 2023 - Simon Nigut · All rights reserved
+          Copyright © 2024 - Simon Nigut · All rights reserved
         </p>
         <div class="hidden items-center gap-x-4 md:flex">
-          <a href="">
+          <a
+            href="https://medium.com/@simonnigut"
+            title="Dribbble"
+            target="_blank"
+            rel="noopener"
+          >
             <i
-              class="fa-brands fa-square-twitter fa-xl text-white hover:text-purple-500"
+              class="fa-brands fa-square-dribbble fa-xl text-white hover:text-purple-500"
             ></i>
           </a>
-          <a href="https://github.com/Achatin">
+          <a
+            href="https://github.com/Achatin"
+            title="GitHub"
+            target="_blank"
+            rel="noopener"
+          >
             <i
               class="fa-brands fa-square-github fa-xl text-white hover:text-purple-500"
             ></i>
           </a>
-          <a href="https://www.linkedin.com/in/%C5%A1imon-nigut-580134237">
+          <a
+            href="https://www.linkedin.com/in/simon-nigut/"
+            title="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
             <i
               class="fa-brands fa-linkedin fa-xl text-white hover:text-purple-500"
             ></i>
