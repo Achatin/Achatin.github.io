@@ -39,7 +39,7 @@ class ImageShowcaseElement extends HTMLElement {
     this.img8 = this.getAttribute("img8");
 
     this.innerHTML = `
-        <div class="image-showcase group relative aspect-[7/5] w-64">
+        <div class="image-showcase group relative aspect-[7/5] w-64 cursor-zoom-in">
           <img src="${this.img8}" class="absolute h-1/2 w-1/2 translate-x-1/2 translate-y-1/2 rounded-lg bg-gray-100 transition-transform delay-75 duration-300 ease-in-out group-hover:-translate-y-[65%] group-hover:translate-x-[200%] group-hover:-rotate-[15deg] object-cover" />
           <img src="${this.img7}" class="absolute h-full w-full -translate-x-4 -rotate-1 rounded-lg bg-gray-900 transition-transform delay-75 duration-300 ease-in-out group-hover:-translate-x-[75%] group-hover:translate-y-[16%] group-hover:-rotate-[24deg] object-cover" />
           <img src="${this.img6}" class="absolute h-1/2 w-1/2 translate-x-1/2 translate-y-1/2 rounded-lg bg-gray-200 transition-transform delay-75 duration-300 ease-in-out group-hover:translate-x-[250%] group-hover:translate-y-[200%] group-hover:rotate-[10deg] object-cover" />

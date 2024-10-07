@@ -49,7 +49,7 @@
 
           <div class="my-12 flex flex-col items-center md:flex-row">
             <a
-              href="images/resume.pdf"
+              href="/resume.pdf"
               download
               class="mb-10 rounded-lg bg-purple-600 px-6 py-4 text-xl font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:mb-0"
             >
@@ -249,6 +249,7 @@
       >
         <image-showcase
           id="example-showcase"
+          onmousedown="openCarousel(this)"
           class="relative mb-10 scale-75 md:mb-0 md:scale-100"
           img1="/images/spawn-codes/frontpage.png"
           img2="/images/spawn-codes/python.png"
@@ -278,15 +279,15 @@
             your lectures, view the lessons. Made with
             <strong>Hugo</strong> and <strong>TailwindCSS</strong>.
           </p>
-          <div class="flex">
+          <div class="flex justify-around">
             <a
               href="https://github.com/Achatin/Koder.git"
               class="text-xl font-bold transition-transform duration-200 hover:scale-105"
             >
               <i class="fa-brands fa-github mx-2"></i>Code
             </a>
-            <!-- <a
-              href="#"
+            <a
+              href="https://achatin.github.io/Koder/"
               class="group flex text-xl font-bold transition-transform duration-200 hover:scale-105"
             >
               Live Demo
@@ -294,29 +295,24 @@
                 class="mx-1 transition-transform duration-100 group-hover:translate-x-1.5"
                 >➜</span
               >
-            </a> -->
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- <section
+      <section
         class="mb-20 flex h-full flex-col-reverse items-center justify-around md:flex-row"
       >
-        <div class="max-w-lg text-center">
-          <h3 class="mb-4 text-2xl font-bold">Online Lecture Maker SAaS</h3>
+        <div class="max-w-lg">
+          <h3 class="mb-4 text-2xl font-bold">Websites for local Cafés</h3>
           <p class="mb-8 text-gray-500">
-            Online Japanese snack shop made with the best PHP framework. Browse
-            through snacks, add them to the cart & checkout.
+            Simple websites for two coffee shops in Slovakia. Made according to
+            a template or custom design in <strong>Figma</strong>. Developed
+            with focus on <strong>SEO</strong>.
           </p>
-          <div class="flex justify-around">
+          <div class="flex">
             <a
-              href="#"
-              class="text-xl font-bold transition-transform duration-200 hover:scale-105"
-            >
-              <i class="fa-brands fa-github mx-2"></i>Code
-            </a>
-            <a
-              href="#"
+              href="https://achatin.github.io/DameKavu/"
               class="group flex text-xl font-bold transition-transform duration-200 hover:scale-105"
             >
               Live Demo
@@ -328,44 +324,55 @@
           </div>
         </div>
         <image-showcase
-          class="mb-10 scale-75 md:mb-0 md:scale-100"
+          id="example-showcase"
+          onmousedown="openCarousel(this)"
+          class="relative mb-10 scale-75 md:mb-0 md:scale-100"
+          img1="/images/cafes/dk_front.png"
+          img2="/images/cafes/dk_coffee.gif"
+          img3="/images/cafes/urban_front.png"
+          img4="/images/cafes/dk_contact_us.gif"
+          img5="/images/cafes/dk_logo.png"
+          img6="/images/cafes/urban_contact.png"
+          img7="/images/cafes/urban_about.png"
+          img8="/images/cafes/urban_reviews.png"
         ></image-showcase>
-      </section> -->
+      </section>
 
-      <!-- <section
+      <section
         class="mb-20 flex h-full flex-col items-center justify-around md:flex-row"
       >
         <image-showcase
-          class="mb-10 scale-75 md:mb-0 md:scale-100"
+          id="example-showcase"
+          onmousedown="openCarousel(this)"
+          class="relative mb-10 scale-75 md:mb-0 md:scale-100"
+          img1="/images/university/pexeso_front.png"
+          img2="/images/university/pexeso_about.png"
+          img3="/images/university/pexeso_reviews.png"
+          img4="/images/university/rf_order.png"
+          img5="/images/university/rf_empty.png"
+          img6="/images/university/rf_filled.png"
+          img7="/images/university/rf_filled_2.png"
+          img8="/images/university/rf_calendar.png"
         ></image-showcase>
-        <div class="max-w-lg text-center">
-          <h3 class="mb-4 text-2xl font-bold">
-            Markdown Documentation Components
-          </h3>
+        <div class="max-w-lg">
+          <h3 class="mb-4 text-2xl font-bold">University Work</h3>
           <p class="mb-8 text-gray-500">
-            Online Japanese snack shop made with the best PHP framework. Browse
-            through snacks, add them to the cart & checkout.
+            A mix of interesting projects made during my studies.
+            <strong>Full-stack</strong> projects with
+            <strong>Java Spring</strong> back-end and basic front-end
+            technologies. All automatically tested & deployed through
+            <strong>CI/CD pipeline</strong>.
           </p>
-          <div class="flex justify-around">
+          <!-- <div class="flex justify-around">
             <a
               href="#"
               class="text-xl font-bold transition-transform duration-200 hover:scale-105"
             >
               <i class="fa-brands fa-github mx-2"></i>Code
             </a>
-            <a
-              href="#"
-              class="group flex text-xl font-bold transition-transform duration-200 hover:scale-105"
-            >
-              Live Demo
-              <span
-                class="mx-1 transition-transform duration-100 group-hover:translate-x-1.5"
-                >➜</span
-              >
-            </a>
-          </div>
+          </div> -->
         </div>
-      </section> -->
+      </section>
     </div>
 
     <!-- Contact -->
@@ -411,10 +418,47 @@
             ></icon-bubble>
             <div>
               <p class="text-gray-500">LinkedIn</p>
-              <p class="text-xl font-bold">Šimon Nigut</p>
+              <p class="text-xl font-bold">Simon Nigut</p>
             </div>
           </a>
         </div>
+      </div>
+    </div>
+
+    <div
+      id="overlay"
+      class="fixed inset-0 z-20 hidden cursor-pointer bg-black bg-opacity-50"
+    >
+      <button
+        id="closeOverlay"
+        type="button"
+        class="fixed right-12 top-8 h-9 w-9 rounded-full bg-white shadow-sm hover:bg-gray-200 hover:shadow-lg"
+      >
+        ✖
+      </button>
+    </div>
+
+    <div
+      id="carousel"
+      class="container fixed inset-0 z-30 mx-auto my-48 hidden w-1/3"
+    >
+      <div class="relative">
+        <div class="carousel flex justify-center overflow-hidden shadow-lg">
+          <img src="" />
+        </div>
+
+        <button
+          id="prev"
+          class="absolute -left-10 top-1/2 h-8 w-8 -translate-y-1/2 transform rounded-full bg-white shadow-md hover:bg-gray-200"
+        >
+          ❮
+        </button>
+        <button
+          id="next"
+          class="absolute -right-10 top-1/2 h-8 w-8 -translate-y-1/2 transform rounded-full bg-white shadow-md hover:bg-gray-200"
+        >
+          ❯
+        </button>
       </div>
     </div>
 
