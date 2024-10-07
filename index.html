@@ -13,13 +13,13 @@
     <script defer src="app.js"></script>
     <script src="custom-components.js"></script>
   </head>
-  <body class="text-slate-800">
+  <body class="text-sm text-slate-800 md:text-base">
     <!-- Title Screen -->
-    <div class="m-5 min-h-screen max-w-screen-xl md:mx-auto">
+    <div class="m-5 mx-10 min-h-screen max-w-screen-xl md:mx-auto">
       <header class="mt-10 flex items-center justify-between">
         <a href="#" class="flex items-center">
-          <h2 class="mr-2 text-4xl">@</h2>
-          <h3 class="font-mono text-xl font-black leading-none">
+          <h2 class="mr-2 text-3xl md:text-4xl">@</h2>
+          <h3 class="font-mono text-base font-black leading-none md:text-xl">
             <span class="text-purple-600">Simon</span><br />Nigut
           </h3>
         </a>
@@ -32,7 +32,7 @@
 
         <a
           href="#contact"
-          class="rounded-md bg-purple-600 px-4 py-2 text-lg font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl"
+          class="rounded-md bg-purple-600 px-4 py-2 text-base font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:text-lg"
         >
           Let's Talk
         </a>
@@ -51,10 +51,10 @@
             <a
               href="/resume.pdf"
               download
-              class="mb-10 rounded-lg bg-purple-600 px-6 py-4 text-xl font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:mb-0"
+              class="mb-10 rounded-lg bg-purple-600 px-6 py-4 text-lg font-bold text-white drop-shadow-lg transition-all duration-150 hover:scale-110 hover:drop-shadow-xl md:mb-0 md:text-xl"
             >
               Resumé
-              <i class="fa-regular fa-paper-plane fa-lg ml-2"></i>
+              <i class="fa-regular fa-paper-plane md:fa-lg ml-2"></i>
             </a>
             <div class="flex gap-x-6 md:ml-24">
               <a
@@ -132,11 +132,11 @@
 
     <!-- Experience -->
     <div id="experience" class="bg-gray-100">
-      <div class="m-5 min-h-screen max-w-screen-xl md:mx-auto">
+      <div class="m-5 mx-10 min-h-screen max-w-screen-xl md:mx-auto">
         <div class="flex min-h-fit flex-col justify-between pt-20 md:flex-row">
           <div class="w-full">
             <h2
-              class="relative mx-auto mb-10 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
+              class="relative mx-auto mb-10 w-fit text-center text-3xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
             >
               Skills &<br />Experience
               <p
@@ -160,15 +160,15 @@
           </div>
 
           <div class="w-full max-w-xl">
-            <h3 class="pt-20 text-4xl font-bold md:text-5xl">Experience</h3>
+            <h3 class="pt-20 text-3xl font-bold md:text-5xl">Experience</h3>
 
             <div
               class="my-10 w-full rounded-full border border-slate-800 md:border-2"
             ></div>
 
             <div class="grid grid-cols-3 grid-rows-2">
-              <p class="text-lg font-bold">Jun 2023 - Jul 2024</p>
-              <p class="col-span-2 mb-3 text-2xl font-bold">
+              <p class="font-bold md:text-lg">Jun 2023 - Jul 2024</p>
+              <p class="col-span-2 mb-3 text-xl font-bold md:text-2xl">
                 Front-end Developer
               </p>
               <div></div>
@@ -180,8 +180,8 @@
             ></div>
 
             <div class="grid grid-cols-3 grid-rows-2">
-              <p class="text-lg font-bold">Sep 2022 - May 2023</p>
-              <p class="col-span-2 mb-3 text-2xl font-bold">
+              <p class="font-bold md:text-lg">Sep 2022 - May 2023</p>
+              <p class="col-span-2 mb-3 text-xl font-bold md:text-2xl">
                 Programming Lector
               </p>
               <div></div>
@@ -190,7 +190,7 @@
           </div>
         </div>
 
-        <h3 class="pb-10 pt-8 text-4xl font-bold md:pb-14 md:text-5xl">
+        <h3 class="pb-10 pt-8 text-3xl font-bold md:pb-14 md:text-5xl">
           Skills
         </h3>
 
@@ -231,10 +231,10 @@
     <!-- Projects -->
     <div
       id="portfolio"
-      class="m-5 my-20 mb-28 min-h-full max-w-screen-xl md:mx-auto"
+      class="m-5 mx-10 my-20 mb-28 min-h-full max-w-screen-xl md:mx-auto"
     >
       <h2
-        class="relative mx-auto mb-10 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
+        class="relative mx-auto mb-10 w-fit text-center text-3xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
       >
         Latest Projects
         <p
@@ -248,7 +248,6 @@
         class="mb-20 flex h-full flex-col items-center justify-around md:mt-32 md:flex-row"
       >
         <image-showcase
-          id="example-showcase"
           onmousedown="openCarousel(this)"
           class="relative mb-10 scale-75 md:mb-0 md:scale-100"
           img1="/images/spawn-codes/frontpage.png"
@@ -270,8 +269,8 @@
             hover me
           </p>
         </image-showcase>
-        <div class="max-w-lg">
-          <h3 class="mb-4 text-2xl font-bold">
+        <div class="max-w-lg text-center md:text-right">
+          <h3 class="mb-4 text-xl font-bold md:text-2xl">
             Spawn.codes Programming Courses
           </h3>
           <p class="mb-8 text-gray-500">
@@ -303,8 +302,10 @@
       <section
         class="mb-20 flex h-full flex-col-reverse items-center justify-around md:flex-row"
       >
-        <div class="max-w-lg">
-          <h3 class="mb-4 text-2xl font-bold">Websites for local Cafés</h3>
+        <div class="max-w-lg text-center md:text-right">
+          <h3 class="mb-4 text-xl font-bold md:text-2xl">
+            Websites for local Cafés
+          </h3>
           <p class="mb-8 text-gray-500">
             Simple websites for two coffee shops in Slovakia. Made according to
             a template or custom design in <strong>Figma</strong>. Developed
@@ -344,6 +345,7 @@
         <image-showcase
           id="example-showcase"
           onmousedown="openCarousel(this)"
+          touchstart=""
           class="relative mb-10 scale-75 md:mb-0 md:scale-100"
           img1="/images/university/pexeso_front.png"
           img2="/images/university/pexeso_about.png"
@@ -354,8 +356,8 @@
           img7="/images/university/rf_filled_2.png"
           img8="/images/university/rf_calendar.png"
         ></image-showcase>
-        <div class="max-w-lg">
-          <h3 class="mb-4 text-2xl font-bold">University Work</h3>
+        <div class="max-w-lg text-center md:text-right">
+          <h3 class="mb-4 text-xl font-bold md:text-2xl">University Work</h3>
           <p class="mb-8 text-gray-500">
             A mix of interesting projects made during my studies.
             <strong>Full-stack</strong> projects with
@@ -377,9 +379,9 @@
 
     <!-- Contact -->
     <div id="contact" class="bg-gray-100 py-12 md:py-20">
-      <div class="relative m-5 max-w-screen-xl md:mx-auto">
+      <div class="relative m-5 mx-10 max-w-screen-xl md:mx-auto">
         <h2
-          class="relative mx-auto mb-16 w-fit text-center text-4xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
+          class="relative mx-auto mb-16 w-fit text-center text-3xl font-bold leading-snug md:mx-0 md:text-left md:text-7xl"
         >
           Consider hiring?<br />Let's Chat
           <p

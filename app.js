@@ -26,25 +26,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// OVERLAY
-const overlay = document.getElementById("overlay");
-const overlayCloseButton = document.getElementById("closeOverlay");
-
-overlay.addEventListener("click", () => {
-  overlay.classList.add("hidden");
-  carousel.classList.add("hidden");
-});
-
-overlayCloseButton.addEventListener("click", () => {
-  overlay.classList.add("hidden");
-  carousel.classList.add("hidden");
-});
-
 // CAROUSEL
 const carousel = document.getElementById("carousel");
 const image = carousel.querySelector("img");
 let images = [];
 let index = 0;
+
+const overlay = document.getElementById("overlay");
+const overlayCloseButton = document.getElementById("closeOverlay");
 
 function openCarousel(f) {
   overlay.classList.remove("hidden");
@@ -77,3 +66,32 @@ function updateCarousel() {
   image.setAttribute("src", images[index]);
   console.log(images[index]);
 }
+
+// OVERLAY
+
+overlay.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  carousel.classList.add("hidden");
+});
+
+overlayCloseButton.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  carousel.classList.add("hidden");
+});
+
+// Select all <image-showcase> elements
+const showcases = document.querySelectorAll("image-showcase");
+
+// Add event listener to each <image-showcase> element
+showcases.forEach((showcase) => {
+  showcase.addEventListener("mousedown", function () {
+    openCarousel(this);
+  });
+});
+
+// Prevent touch events from triggering the click action
+showcases.forEach((sc) => {
+  sc.addEventListener("touchstart", (event) => {
+    event.preventDefault();
+  });
+});

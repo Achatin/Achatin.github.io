@@ -4,7 +4,11 @@ class IconBubbleElement extends HTMLElement {
     this.icon = this.getAttribute("icon");
 
     this.innerHTML = `
-        <div class="flex h-${this.size} w-${this.size} items-center justify-center rounded-full bg-slate-800 drop-shadow-lg transition-all delay-75 duration-150 hover:scale-110 hover:drop-shadow-xl">
+        <div class="flex md:h-${this.size} md:w-${this.size} h-${
+      this.size - 2
+    } w-${
+      this.size - 2
+    } items-center justify-center rounded-full bg-slate-800 drop-shadow-lg transition-all delay-75 duration-150 hover:scale-110 hover:drop-shadow-xl">
             <i class="${this.icon} fa-xl text-white"></i>
         </div>`;
   }
